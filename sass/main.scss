@@ -1,0 +1,24 @@
+// Utils styles
+@import './utils/variables';
+@import './utils/visually_hidden';
+
+// Base styles
+@import './base/common';
+@import './base/reset';
+
+// Components styles
+@import './components/fonts';
+@import './components/section';
+@import './components/container';
+@import './components/button';
+
+// layout styles
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/services&prices';
+@import './layout/advantages';
+@import './layout/team';
+@import './layout/gallery';
+@import './layout/booking&contacts';
+@import './layout/footer';
