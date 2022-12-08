@@ -1,6 +1,6 @@
-h1 {
+h1
+.hero-title {
     font-family: var(--title-font);
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: calc (56 / 48);
@@ -8,4 +8,15 @@ h1 {
     color: var(--light-title-color);
 }
 
+.uppertitle {
+    @extend %uppertitle;
+}
+
+.title {
+    @extend %title;
+}
+
+.descr {
+    @extend %descr;
+}
 
