@@ -1,8 +1,73 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --title-font: "Raleway", sans-serif;
+  --accent-color: #FF6C00;
+  --dark-title-color: #303030;
+  --light-title-color: #FFFFFF;
+  --light-uppertitle-color: rgba(157, 164, 189, 0.6);
+  --dark-text-color: #555555;
+  --light-text-color: #9DA4BD;
+  --graphic-color: #303030;
+  --form-active-color: #FFFFFF;
+  --form-color: rgba(157, 164, 189, 0.4);
+  --footer-color: #9DA4BD;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1 {
-  font-family: "Raleway";
+  font-family: var(--title-font);
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 56px;
+  line-height: calc 1.1666666667;
   letter-spacing: 0.05em;
+  color: var(--light-title-color);
+}
+
+section {
+  padding-top: 84px;
+  padding-bottom: 84px;
 }/*# sourceMappingURL=main.css.map */
