@@ -1,22 +1,8 @@
-.hero_title {
-    margin-bottom: 20px;
-
-    font-family: var(--title-font);
-    font-size: 48px;
-    line-height: calc (56 / 48);
-    letter-spacing: 0.05em;
-    color: var(--light-title-color);
-
-    @media screen and (max-width: 358px) {
-        font-size: 40px;
-    }
-}
-
 .uppertitle_dark {
     @extend %uppertitle;
     color: var(--dark-title-color);
 
-    &:first-child::before {
+    &::before {
         background-color: var(--dark-title-color);
     }
 }

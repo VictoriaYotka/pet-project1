@@ -1,0 +1,24 @@
+.gallery_uppertitle {
+    margin-bottom: 71px;
+
+    @include tablet {
+        margin-bottom: 44px;
+    }
+}
+
+.gallery_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.gallery_item {
+
+    @include tablet {
+        flex-basis: calc((100% - var(--indent)*(var(--items) - 1))/var(--items));
+    }
+
+    @include desktop {
+        --items: 4;
+    }
+}
