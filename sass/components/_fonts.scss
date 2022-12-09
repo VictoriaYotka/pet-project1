@@ -1,22 +1,47 @@
-h1
-.hero-title {
+.hero_title {
+    margin-bottom: 20px;
+
     font-family: var(--title-font);
-    font-weight: 700;
     font-size: 48px;
     line-height: calc (56 / 48);
     letter-spacing: 0.05em;
     color: var(--light-title-color);
+
+    @media screen and (max-width: 358px) {
+        font-size: 40px;
+    }
 }
 
-.uppertitle {
+.uppertitle_dark {
     @extend %uppertitle;
+    color: var(--dark-title-color);
+
+    &:first-child::before {
+        background-color: var(--dark-title-color);
+    }
 }
 
-.title {
+.uppertitle_light {
+    @extend %uppertitle;
+    color: var(--light-uppertitle-color);
+
+    &::before {
+        background-color: var(--light-uppertitle-color);
+    }
+}
+
+.title_dark {
     @extend %title;
+    color: var(--dark-title-color);
 }
 
-.descr {
+.descr_dark {
     @extend %descr;
+    color: var(--dark-text-color);
+}
+
+.descr_light {
+    @extend %descr;
+    color: var(--light-text-color);
 }
 

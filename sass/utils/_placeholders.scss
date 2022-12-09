@@ -4,10 +4,11 @@
     font-weight: 600;
     font-size: 11px;
     line-height: calc(15/11);
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 20px;
 
-    &::before {
+    &:first-child::before {
         content: "";
         margin-right: 20px;
         width: 60px;
@@ -43,5 +44,10 @@
     background-color: transparent;
     cursor: pointer;
 
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.09em;
     text-transform: uppercase;
 }

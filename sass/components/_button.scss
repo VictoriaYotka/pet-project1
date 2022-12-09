@@ -1,3 +1,9 @@
-.btn {
+.btn-dark {
     @extend %btn;
+    color: var(--dark-title-color);
+}
+
+.btn-light {
+    @extend %btn;
+    color: var(--light-title-color);
 }

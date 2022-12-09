@@ -28,21 +28,6 @@
     }
 }
 
-.about_uppertitle {
-    color: var(--dark-title-color);
-
-    &::before {
-        background-color: var(--dark-title-color);
-    }
-}
-
-.about_title {
-    color: var(--dark-title-color); 
-}
-
-.about_descr {
-    color: var(--dark-text-color);
-}
 
 .about_text {
     font-weight: 400;
