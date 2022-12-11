@@ -21,6 +21,11 @@
     color: var(--dark-title-color);
 }
 
+.title_light {
+    @extend %title;
+    color: var(--light-title-color);
+}
+
 .descr_dark {
     @extend %descr;
     color: var(--dark-text-color);

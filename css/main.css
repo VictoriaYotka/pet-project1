@@ -13,6 +13,7 @@
   --footer-color: #9DA4BD;
   --light-bg-color: #FFFFFF;
   --bg-color: #F7F7F7;
+  --dark-bg-color: rgba(25, 28, 38, 0.9);
   --indent: 30px;
   --items: 2;
 }
@@ -38,7 +39,7 @@
   height: 1px;
 }
 
-.title_dark {
+.title_light, .title_dark {
   font-family: var(--title-font);
   font-size: 28px;
   line-height: 1.1785714286;
@@ -46,7 +47,7 @@
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
-  .title_dark {
+  .title_light, .title_dark {
     font-size: 42px;
     line-height: 1.1666666667;
   }
@@ -133,6 +134,10 @@ img {
 
 .title_dark {
   color: var(--dark-title-color);
+}
+
+.title_light {
+  color: var(--light-title-color);
 }
 
 .descr_dark {
@@ -373,6 +378,52 @@ img {
 @media screen and (min-width: 1200px) {
   .about_text {
     margin-bottom: 42px;
+  }
+}
+
+.services_section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--dark-bg-color)), to(var(--dark-bg-color))), url(../img/services&prices/services-480-1x.jpg);
+  background-image: linear-gradient(var(--dark-bg-color), var(--dark-bg-color)), url(../img/services&prices/services-480-1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .services_section {
+    background-image: url(../img/services&prices/services-480-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .services_section {
+    background-image: url(../img/services&prices/services-768-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .services_section {
+    background-image: url(../img/services&prices/services-768-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services_section {
+    max-width: 1600px;
+    background-image: url(../img/services&prices/services-1600-1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .services_section {
+    background-image: url(../img/services&prices/services-1600-2x.jpg);
+  }
+}
+
+.services_title {
+  font-size: 40px;
+  line-height: 1.175;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .services_title {
+    font-size: 42px;
+    line-height: 1.1666666667;
   }
 }
 
