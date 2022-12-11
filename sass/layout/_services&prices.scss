@@ -1,28 +1,35 @@
 .services_section {
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: var(--dark-bg-color);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(var(--dark-bg-color), var(--dark-bg-color)), url(../img/services&prices/services-480-1x.jpg);
+    background-image:  url(../img/services&prices/services-480-1x.png);
+    
+
+    // linear-gradient(var(--dark-bg-color), var(--dark-bg-color)),
 
     @include retina {
-        background-image: url(../img/services&prices/services-480-2x.jpg);
+        background-image: url(../img/services&prices/services-480-2x.png);
 
     }
 
     @include tablet {
-        background-image: url(../img/services&prices/services-768-1x.jpg);
+        background-image: url(../img/services&prices/services-768-1x.png);
 
         @include retina {
-            background-image: url(../img/services&prices/services-768-2x.jpg);
+            background-image: url(../img/services&prices/services-768-2x.png);
         }
     }
 
     @include desktop {
         max-width: 1600px;
-        background-image: url(../img/services&prices/services-1600-1x.jpg);
+        background-image: url(../img/services&prices/services-1600-1x.png);
 
         @include retina {
-            background-image: url(../img/services&prices/services-1600-2x.jpg);
+            background-image: url(../img/services&prices/services-1600-2x.png);
         }
     }
 }
