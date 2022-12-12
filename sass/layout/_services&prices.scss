@@ -1,46 +1,140 @@
 .services_section {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 
-    background-color: var(--dark-bg-color);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image:  url(../img/services&prices/services-480-1x.png);
-    
+  background-color: var(--dark-bg-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/services&prices/services-480-1x.png);
 
-    // linear-gradient(var(--dark-bg-color), var(--dark-bg-color)),
+  @include retina {
+    background-image: url(../img/services&prices/services-480-2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../img/services&prices/services-768-1x.png);
 
     @include retina {
-        background-image: url(../img/services&prices/services-480-2x.png);
-
+      background-image: url(../img/services&prices/services-768-2x.png);
     }
+  }
 
-    @include tablet {
-        background-image: url(../img/services&prices/services-768-1x.png);
+  @include desktop {
+    max-width: 1600px;
+    background-image: url(../img/services&prices/services-1600-1x.png);
 
-        @include retina {
-            background-image: url(../img/services&prices/services-768-2x.png);
-        }
+    @include retina {
+      background-image: url(../img/services&prices/services-1600-2x.png);
     }
-
-    @include desktop {
-        max-width: 1600px;
-        background-image: url(../img/services&prices/services-1600-1x.png);
-
-        @include retina {
-            background-image: url(../img/services&prices/services-1600-2x.png);
-        }
-    }
+  }
 }
 
 .services_title {
-    font-size: 40px;
-    line-height: calc(47/40);
-    margin-bottom: 44px;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  margin-bottom: 44px;
 
-    @include tablet {
-        font-size: 42px;
-        line-height: calc(49/42);
+  @include tablet {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
+}
+
+.servises_list_wrapper {
+  padding: 30px 20px 30px 40px;
+  margin-bottom: 44px;
+
+  @media screen and (max-width: 1199px) {
+    background-image: linear-gradient(
+      180deg,
+      #171a24 0%,
+      rgba(23, 26, 36, 0.2) 100%
+    );
+  }
+
+  @include tablet {
+    padding: 32px 40px 32px 40px;
+  }
+
+  @include desktop {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+  }
+}
+
+.services_list {
+  font-size: 14px;
+  line-height: 20px;
+
+  color: var(--light-text-color);
+
+  &:first-child {
+    @include desktop {
+      background-image: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+      );
     }
+  }
+
+  &:last-child {
+    @include desktop {
+      background-image: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.2) 100%
+      );
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include tablet {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+  }
+
+  @include desktop {
+    flex-basis: calc(50% - 15px);
+    padding: 30px 20px 30px 20px;
+  }
+}
+
+.services_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.services_type {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-grow: 1;
+
+  &::after {
+    content: "";
+    display: inline-flex;
+    height: 1px;
+    flex-grow: 1;
+
+    background-color: rgba(157, 164, 189, 0.12);
+  }
+}
+
+.services_btn {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }

@@ -1,34 +1,32 @@
 :root {
-    // Fonts
-    --main-font: 'Open Sans', sans-serif;
-    --title-font: 'Raleway', sans-serif;
+  // Fonts
+  --main-font: "Open Sans", sans-serif;
+  --title-font: "Raleway", sans-serif;
 
-    // Colors
-    --accent-color: #FF6C00;
+  // Colors
+  --accent-color: #ff6c00;
 
-    --dark-title-color: #303030;
-    --light-title-color: #FFFFFF;
-    --light-uppertitle-color: rgba(157, 164, 189, 0.6);
+  --dark-title-color: #303030;
+  --light-title-color: #ffffff;
+  --light-uppertitle-color: rgba(157, 164, 189, 0.6);
 
-    --dark-text-color: #555555;
-    --light-text-color: #9DA4BD;
+  --dark-text-color: #555555;
+  --light-text-color: #9da4bd;
 
-    --graphic-color: #303030;
+  --graphic-color: #303030;
 
-    --form-active-color: #FFFFFF;
-    --form-color: rgba(157, 164, 189, 0.4);
+  --form-active-color: #ffffff;
+  --form-color: rgba(157, 164, 189, 0.4);
 
-    --footer-color: #9DA4BD;
+  --footer-color: #9da4bd;
 
-    --light-bg-color: #FFFFFF;
-    --bg-color: #F7F7F7;
-    // --dark-bg-color: rgba(26, 28, 38, 0.9);
-    --dark-bg-color: #111319;
+  --light-bg-color: #ffffff;
+  --bg-color: #f7f7f7;
+  --dark-bg-color: #111319;
 
-    // List items
-    --indent: 30px;
-    --items: 2;
+  // List items
+  --indent: 30px;
+  --items: 2;
 
-    // Transition
-
+  // Transition
 }

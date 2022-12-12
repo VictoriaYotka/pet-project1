@@ -1,374 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
 
     <!-- Normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet" />
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
 
     <main>
+      <!-- Hero -->
+      <section class="hero_section">
+        <ul class="hero_list list">
+          <li class="hero_item">
+            <a
+              class="hero_link link"
+              href="https://www.instagram.com"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener norefferer nofoolow"
+              >Instagram</a
+            >
+          </li>
+          <li class="hero_item">
+            <a
+              class="hero_link link"
+              href="https://www.youtube.com"
+              aria-label="Youtube"
+              target="_blank"
+              rel="noopener norefferer nofoolow"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+        <div class="hero_container">
+          <h3 class="uppertitle_light">A hair salon for men in Kyiv</h3>
+          <h1 class="hero_title">BarberShop</h1>
+          <p class="descr_light">
+            We are experts in trendy men’s haircuts. <br />
+            We work quickly, carefully and with style.
+          </p>
+        </div>
+      </section>
 
-        <!-- Hero -->
-        <section class="hero_section">
-            <ul class="hero_list list">
-                <li class="hero_item">
-                    <a class="hero_link link" href="https://www.instagram.com" aria-label="Instagram" target="_blank"
-                        rel="noopener norefferer nofoolow">Instagram</a>
-                </li>
-                <li class="hero_item">
-                    <a class="hero_link link" href="https://www.youtube.com" aria-label="Youtube" target="_blank"
-                        rel="noopener norefferer nofoolow">Youtube</a>
-                </li>
+      <!-- About -->
+      <section class="section">
+        <div class="container about_container">
+          <ul class="about_img_list list">
+            <li class="about_img_item">
+              <picture>
+                <!-- desktop -->
+                <source
+                  srcset="
+                    ./img/about/about-1-270-@1x.jpg 270w,
+                    ./img/about/about-1-270-@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                  type="image/jpg" />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./img/about/about-1-330-@1x.jpg 330w,
+                    ./img/about/about-1-330-@2x.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpg" />
+
+                <img
+                  src="./img/about/about-1-270-@1x.jpg"
+                  alt="barbering a beard"
+                  loading="lazy" />
+              </picture>
+            </li>
+
+            <li class="about_img_item">
+              <picture>
+                <!-- desktop -->
+                <source
+                  srcset="
+                    ./img/about/about-2-270-@1x.jpg 270w,
+                    ./img/about/about-2-270-@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                  type="image/jpg" />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./img/about/about-2-330-@1x.jpg 330w,
+                    ./img/about/about-2-330-@2x.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 330px, 100vw"
+                  type="image/jpg" />
+
+                <img
+                  src="./img/about/about-2-270-@1x.jpg"
+                  alt="making a haircut"
+                  loading="lazy" />
+              </picture>
+            </li>
+          </ul>
+
+          <div class="about_content_wrapper">
+            <h3 class="uppertitle_dark">About</h3>
+            <h2 class="title_dark">Best Barbershop in your city</h2>
+            <p class="descr_dark">
+              If you want to add more confidence to your image, you should visit
+              us
+            </p>
+            <p class="about_text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="btn-dark">online-booking</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services and prices -->
+      <section class="services_section section">
+        <div class="container">
+          <h3 class="uppertitle_light">
+            Spend your time with the best masters
+          </h3>
+          <h2 class="services_title title_light">Services and prices</h2>
+          <div class="servises_list_wrapper">
+            <ul class="services_list list">
+              <li class="services_item">
+                <span class="services_type">Men’s haircut</span>
+                <span>from 300 uah.</span>
+              </li>
+              <li class="services_item">
+                <span class="services_type">Beard trim</span>
+                <span>from 200 uah.</span>
+              </li>
+              <li class="services_item">
+                <span class="services_type">Mustache trim</span>
+                <span>from 200 uah.</span>
+              </li>
+              <li class="services_item">
+                <span class="services_type">Straight razor shave</span>
+                <span>from 200 uah.</span>
+              </li>
             </ul>
-            <div class="hero_container">
-                <h3 class="uppertitle_light">A hair salon for men in Kyiv</h3>
-                <h1 class="hero_title">BarberShop</h1>
-                <p class="descr_light">We are experts in trendy men’s haircuts. <br>
-                    We work quickly, carefully and with style.</p>
-            </div>
-        </section>
 
-        <!-- About -->
-        <section class="section">
-            <div class="container about_container">
-                <ul class="about_img_list list">
-                    <li class="about_img_item">
-                        <picture>
-                            <!-- desktop -->
-                            <source srcset="./img/about/about-1-270-@1x.jpg 270w,
-                        ./img/about/about-1-270-@2x.jpg 540w" media="(min-width: 1200px)"
-                                sizes="(min-width: 1200px) 270px, 100vw" type="image/jpg" />
-                            <!-- tablet -->
-                            <source srcset="./img/about/about-1-330-@1x.jpg 330w,
-                        ./img/about/about-1-330-@2x.jpg 660w" media="(min-width: 768px)"
-                                sizes="(min-width: 768px) 330px, 100vw" type="image/jpg" />
+            <ul class="services_list list">
+              <li class="services_item">
+                <span class="services_type">Trainee’s haircut</span>
+                <span>from 50 uah.</span>
+              </li>
+              <li class="services_item">
+                <span class="services_type">Haircut under the nozzle</span>
+                <span>from 200 uah.</span>
+              </li>
+              <li class="services_item">
+                <span class="services_type"
+                  >Children’s haircut (0-12 y.o.)</span
+                >
+                <span>from 300 uah.</span>
+              </li>
+              <li class="services_item">
+                <span class="services_type">Camouflage of grey hair</span>
+                <span>from 200 uah.</span>
+              </li>
+            </ul>
+          </div>
 
-                            <img src="./img/about/about-1-270-@1x.jpg" alt="barbering a beard" loading="lazy" />
-                        </picture>
-                    </li>
+          <button class="services_btn btn-light" type="button">
+            online-booking
+          </button>
+        </div>
+      </section>
 
-                    <li class="about_img_item">
-                        <picture>
-                            <!-- desktop -->
-                            <source srcset="./img/about/about-2-270-@1x.jpg 270w,
-                        ./img/about/about-2-270-@2x.jpg 540w" media="(min-width: 1200px)"
-                                sizes="(min-width: 1200px) 270px, 100vw" type="image/jpg" />
-                            <!-- tablet -->
-                            <source srcset="./img/about/about-2-330-@1x.jpg 330w,
-                        ./img/about/about-2-330-@2x.jpg 660w" media="(min-width: 768px)"
-                                sizes="(min-width: 768px) 330px, 100vw" type="image/jpg" />
+      <!-- Advantages -->
 
-                            <img src="./img/about/about-2-270-@1x.jpg" alt="making a haircut" loading="lazy" />
-                        </picture>
-                    </li>
-                </ul>
+      <section class="section">
+        <div class="advantages_container container">
+          <div class="advantages_text_wrapper">
+            <h3 class="uppertitle_dark">Old traditional school</h3>
+            <h2 class="advantages_title title_dark">¿Why people come to us?</h2>
+            <p class="advantages_descr descr_dark">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
 
-                <div class="about_content_wrapper">
-                    <h3 class="uppertitle_dark">About</h3>
-                    <h2 class="title_dark">Best Barbershop in your city</h2>
-                    <p class="descr_dark">If you want to add more confidence to your image, you should visit us
-                    </p>
-                    <p class="about_text">We are a team that never stops at what has been achieved and are thirsty for
-                        changes.
-                        And when you
-                        fall into the hands
-                        of our master, you will never be the same again. We are a team that is always "on the same wave"
-                        with clients.
-                        Therefore, we are always ready to improve everyone who comes to us!</p>
-                    <button type="button" class="btn-dark">online-booking</button>
-                </div>
-            </div>
-        </section>
+          <div class="advantages_list_wrapper">
+            <ul class="advantages_list list">
+              <li class="advantages_item">
+                <h4 class="advantages_list_title">600</h4>
+                <p class="advantages_list_descr">Satisfied customers per day</p>
+              </li>
+              <li class="advantages_item">
+                <h4 class="advantages_list_title">50</h4>
+                <p class="advantages_list_descr">
+                  Awards for excellent service
+                </p>
+              </li>
+              <li class="advantages_item">
+                <h4 class="advantages_list_title">20</h4>
+                <p class="advantages_list_descr">Kyiv’s best barbers</p>
+              </li>
+              <li class="advantages_item">
+                <h4 class="advantages_list_title">100</h4>
+                <p class="advantages_list_descr">Gifts for regular customers</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <!-- Services and prices -->
-        <section class="services_section section">
-            <div class="container">
-                <h3 class="uppertitle_light">Spend your time with the best masters</h3>
-                <h2 class="services_title title_light">Services and prices</h2>
-                <ul>
-                    <li>
-                        <span>Men’s haircut</span>
-                        <span>from 300 uah.</span>
-                    </li>
-                    <li>
-                        <span>Beard trim</span>
-                        <span>from 200 uah.</span>
-                    </li>
-                    <li>
-                        <span>Mustache trim</span>
-                        <span>from 200 uah.</span>
-                    </li>
-                    <li>
-                        <span>Straight razor shave</span>
-                        <span>from 200 uah.</span>
-                    </li>
-                </ul>
+      <!-- Team -->
+      <section class="team_section section">
+        <div class="container">
+          <h3 class="uppertitle_dark">For true enjoyers of the atmosphere</h3>
+          <h2 class="title_dark team_title">Our barbers</h2>
+          <ul class="team_list list">
+            <li>
+              <img
+                srcset="
+                  ./img/team/team-1-418-1x.jpg 418w,
+                  ./img/team/team-1-418-2x.jpg 836w,
+                  ./img/team/team-1-450-1x.jpg 450w,
+                  ./img/team/team-1-450-2x.jpg 900w,
+                  ./img/team/team-1-370-1x.jpg 370w,
+                  ./img/team/team-1-370-2x.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px,  100vw"
+                src="./img/team/team-1-418-1x.jpg"
+                alt="John Smith"
+                loading="lazy" />
 
-                <ul>
-                    <li>
-                        <span>Trainee’s haircut</span>
-                        <span>from 50 uah.</span>
-                    </li>
-                    <li>
-                        <span>Haircut under the nozzle</span>
-                        <span>from 200 uah.</span>
-                    </li>
-                    <li>
-                        <span>Children’s haircut (0-12 y.o.)</span>
-                        <span>from 300 uah.</span>
-                    </li>
-                    <li>
-                        <span>Camouflage of grey hair</span>
-                        <span>from 200 uah.</span>
-                    </li>
-                </ul>
+              <h4 class="team_name">John Smith</h4>
+              <p class="team_position">Extreme Barber</p>
+              <ul class="socials_list list">
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://www.instagram.com"
+                    aria-label="Instagram"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://twitter.com"
+                    aria-label="Twitter"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://www.facebook.com"
+                    aria-label="Facebook"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://www.linkedin.com"
+                    aria-label="Linkedin"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-                <button class="btn-light" type="button"></button>
+            <li>
+              <img
+                srcset="
+                  ./img/team/team-2-418-1x.jpg 418w,
+                  ./img/team/team-2-418-2x.jpg 836w,
+                  ./img/team/team-2-450-1x.jpg 450w,
+                  ./img/team/team-2-450-2x.jpg 900w,
+                  ./img/team/team-2-370-1x.jpg 370w,
+                  ./img/team/team-2-370-2x.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px,  100vw"
+                src="./img/team/team-2-418-1x.jpg"
+                alt="Michele Doe"
+                loading="lazy" />
 
-            </div>
-        </section>
+              <h4 class="team_name">Michele Doe</h4>
+              <p class="team_position">Extreme Barber</p>
+              <ul class="socials_list list">
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://www.instagram.com"
+                    aria-label="Instagram"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://twitter.com"
+                    aria-label="Twitter"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://www.facebook.com"
+                    aria-label="Facebook"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://www.linkedin.com"
+                    aria-label="Linkedin"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-        <!-- Advantages -->
+            <li>
+              <img
+                srcset="
+                  ./img/team/team-3-418-1x.jpg 418w,
+                  ./img/team/team-3-418-2x.jpg 836w,
+                  ./img/team/team-3-450-1x.jpg 450w,
+                  ./img/team/team-3-450-2x.jpg 900w,
+                  ./img/team/team-3-370-1x.jpg 370w,
+                  ./img/team/team-3-370-2x.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px,  100vw"
+                src="./img/team/team-3-418-1x.jpg"
+                alt="Alan Black"
+                loading="lazy" />
 
-        <!-- Team -->
-        <section class="team_section section">
-            <div class="container">
-                <h3 class="uppertitle_dark">For true enjoyers of the atmosphere</h3>
-                <h2 class="title_dark team_title">Our barbers</h2>
-                <ul class="team_list list">
-                    <li>
-                        <img srcset="
-                        ./img/team/team-1-418-1x.jpg 418w,
-                        ./img/team/team-1-418-2x.jpg 836w,
-                        ./img/team/team-1-450-1x.jpg 450w,
-                        ./img/team/team-1-450-2x.jpg 900w,
-                        ./img/team/team-1-370-1x.jpg 370w,
-                        ./img/team/team-1-370-2x.jpg 740w
-                        " sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px,  100vw"
-                            src="./img/team/team-1-418-1x.jpg" alt="John Smith" loading="lazy">
+              <h4 class="team_name">Alan Black</h4>
+              <p class="team_position">Extreme Barber</p>
+              <ul class="socials_list list">
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://www.instagram.com"
+                    aria-label="Instagram"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://twitter.com"
+                    aria-label="Twitter"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://www.facebook.com"
+                    aria-label="Facebook"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="socials_link link"
+                    href="https://www.linkedin.com"
+                    aria-label="Linkedin"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    <svg class="socials_icon" width="20" height="20">
+                      <use href="./img/icons/icons-sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-                        <h4 class="team_name">John Smith</h4>
-                        <p class="team_position">Extreme Barber</p>
-                        <ul class="socials_list list">
-                            <li>
-                                <a class="socials_link link" href="https://www.instagram.com" aria-label="Instagram"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="socials_link link" href="https://twitter.com" aria-label="Twitter"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="socials_link link" href="https://www.facebook.com" aria-label="Facebook"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="socials_link link" href="https://www.linkedin.com" aria-label="Linkedin"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+      <!-- Gallery -->
+      <section class="section">
+        <div class="container">
+          <h2 class="visually-hidden">Gallery</h2>
+          <h3 class="uppertitle_dark gallery_uppertitle">
+            In Latin, "barba" means "beard"
+          </h3>
+          <ul class="gallery_list list">
+            <li class="gallery_item">
+              <img
+                srcset="
+                  ./img/gallery/gallery-1-418-1x.jpg 418w,
+                  ./img/gallery/gallery-1-418-2x.jpg 836w,
+                  ./img/gallery/gallery-1-330-1x.jpg 330w,
+                  ./img/gallery/gallery-1-330-2x.jpg 660w,
+                  ./img/gallery/gallery-1-270-1x.jpg 270w,
+                  ./img/gallery/gallery-1-270-1x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                src="./img/gallery/gallery-1-418-1x.jpg"
+                alt="example of making man's haircut"
+                loading="lazy" />
+            </li>
 
-                    <li>
-                        <img srcset="
-                            ./img/team/team-2-418-1x.jpg 418w,
-                            ./img/team/team-2-418-2x.jpg 836w,
-                            ./img/team/team-2-450-1x.jpg 450w,
-                            ./img/team/team-2-450-2x.jpg 900w,
-                            ./img/team/team-2-370-1x.jpg 370w,
-                            ./img/team/team-2-370-2x.jpg 740w
-                            "
-                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px,  100vw"
-                            src="./img/team/team-2-418-1x.jpg" alt="Michele Doe" loading="lazy">
+            <li class="gallery_item">
+              <img
+                srcset="
+                  ./img/gallery/gallery-2-418-1x.jpg 418w,
+                  ./img/gallery/gallery-2-418-2x.jpg 836w,
+                  ./img/gallery/gallery-2-330-1x.jpg 330w,
+                  ./img/gallery/gallery-2-330-2x.jpg 660w,
+                  ./img/gallery/gallery-2-270-1x.jpg 270w,
+                  ./img/gallery/gallery-2-270-1x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                src="./img/gallery/gallery-2-418-1x.jpg"
+                alt="example of making man's beard"
+                loading="lazy" />
+            </li>
 
-                        <h4 class="team_name">Michele Doe</h4>
-                        <p class="team_position">Extreme Barber</p>
-                        <ul class="socials_list list">
-                            <li>
-                                <a class="socials_link link" href="https://www.instagram.com" aria-label="Instagram"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="socials_link link" href="https://twitter.com" aria-label="Twitter"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="socials_link link" href="https://www.facebook.com" aria-label="Facebook"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="socials_link link" href="https://www.linkedin.com" aria-label="Linkedin"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+            <li class="gallery_item">
+              <img
+                srcset="
+                  ./img/gallery/gallery-3-418-1x.jpg 418w,
+                  ./img/gallery/gallery-3-418-2x.jpg 836w,
+                  ./img/gallery/gallery-3-330-1x.jpg 330w,
+                  ./img/gallery/gallery-3-330-2x.jpg 660w,
+                  ./img/gallery/gallery-3-270-1x.jpg 270w,
+                  ./img/gallery/gallery-3-270-1x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                src="./img/gallery/gallery-3-418-1x.jpg"
+                alt="example of making man's beard"
+                loading="lazy" />
+            </li>
 
-                    <li>
-                        <img srcset="
-                            ./img/team/team-3-418-1x.jpg 418w,
-                            ./img/team/team-3-418-2x.jpg 836w,
-                            ./img/team/team-3-450-1x.jpg 450w,
-                            ./img/team/team-3-450-2x.jpg 900w,
-                            ./img/team/team-3-370-1x.jpg 370w,
-                            ./img/team/team-3-370-2x.jpg 740w
-                            "
-                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px,  100vw"
-                            src="./img/team/team-3-418-1x.jpg" alt="Alan Black" loading="lazy">
+            <li class="gallery_item">
+              <img
+                srcset="
+                  ./img/gallery/gallery-4-418-1x.jpg 418w,
+                  ./img/gallery/gallery-4-418-2x.jpg 836w,
+                  ./img/gallery/gallery-4-330-1x.jpg 330w,
+                  ./img/gallery/gallery-4-330-2x.jpg 660w,
+                  ./img/gallery/gallery-4-270-1x.jpg 270w,
+                  ./img/gallery/gallery-4-270-1x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
+                src="./img/gallery/gallery-4-418-1x.jpg"
+                alt="example of making man's haircut"
+                loading="lazy" />
+            </li>
+          </ul>
+        </div>
+      </section>
 
-                        <h4 class="team_name">Alan Black</h4>
-                        <p class="team_position">Extreme Barber</p>
-                        <ul class="socials_list list">
-                            <li>
-                                <a class="socials_link link" href="https://www.instagram.com" aria-label="Instagram"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="socials_link link" href="https://twitter.com" aria-label="Twitter"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="socials_link link" href="https://www.facebook.com" aria-label="Facebook"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="socials_link link" href="https://www.linkedin.com" aria-label="Linkedin"
-                                    target="_blank" rel="noopener norefferer nofollow">
-                                    <svg class="socials_icon" width="20" height="20">
-                                        <use href="./img/icons/icons-sprite.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Gallery -->
-        <section class="section">
-            <div class="container">
-                <h2 class="visually-hidden">Gallery</h2>
-                <h3 class="uppertitle_dark gallery_uppertitle">In Latin, "barba" means "beard"</h3>
-                <ul class="gallery_list list">
-                    <li class="gallery_item">
-                        <img srcset="
-                        ./img/gallery/gallery-1-418-1x.jpg 418w,
-                        ./img/gallery/gallery-1-418-2x.jpg 836w,
-                        ./img/gallery/gallery-1-330-1x.jpg 330w,
-                        ./img/gallery/gallery-1-330-2x.jpg 660w,
-                        ./img/gallery/gallery-1-270-1x.jpg 270w,
-                        ./img/gallery/gallery-1-270-1x.jpg 540w"
-                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
-                            src="./img/gallery/gallery-1-418-1x.jpg" alt="example of making man's haircut"
-                            loading="lazy">
-                    </li>
-
-                    <li class="gallery_item">
-                        <img srcset="
-                        ./img/gallery/gallery-2-418-1x.jpg 418w,
-                        ./img/gallery/gallery-2-418-2x.jpg 836w,
-                        ./img/gallery/gallery-2-330-1x.jpg 330w,
-                        ./img/gallery/gallery-2-330-2x.jpg 660w,
-                        ./img/gallery/gallery-2-270-1x.jpg 270w,
-                        ./img/gallery/gallery-2-270-1x.jpg 540w"
-                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
-                            src="./img/gallery/gallery-2-418-1x.jpg" alt="example of making man's beard" loading="lazy">
-                    </li>
-
-                    <li class="gallery_item">
-                        <img srcset="
-                        ./img/gallery/gallery-3-418-1x.jpg 418w,
-                        ./img/gallery/gallery-3-418-2x.jpg 836w,
-                        ./img/gallery/gallery-3-330-1x.jpg 330w,
-                        ./img/gallery/gallery-3-330-2x.jpg 660w,
-                        ./img/gallery/gallery-3-270-1x.jpg 270w,
-                        ./img/gallery/gallery-3-270-1x.jpg 540w"
-                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
-                            src="./img/gallery/gallery-3-418-1x.jpg" alt="example of making man's beard" loading="lazy">
-                    </li>
-
-                    <li class="gallery_item">
-                        <img srcset="
-                        ./img/gallery/gallery-4-418-1x.jpg 418w,
-                        ./img/gallery/gallery-4-418-2x.jpg 836w,
-                        ./img/gallery/gallery-4-330-1x.jpg 330w,
-                        ./img/gallery/gallery-4-330-2x.jpg 660w,
-                        ./img/gallery/gallery-4-270-1x.jpg 270w,
-                        ./img/gallery/gallery-4-270-1x.jpg 540w"
-                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
-                            src="./img/gallery/gallery-4-418-1x.jpg" alt="example of making man's haircut"
-                            loading="lazy">
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Booking and contacts -->
-
+      <!-- Booking and contacts -->
     </main>
 
     <!-- Footer -->
@@ -376,7 +535,5 @@
     <!-- Mobile menu -->
 
     <!-- Scripts -->
-
-</body>
-
+  </body>
 </html>
