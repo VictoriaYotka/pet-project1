@@ -1,0 +1,249 @@
+.booking-contacts_wrapper {
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--dark-bg-color);
+
+  @include desktop {
+    display: flex;
+    max-width: 1600px;
+  }
+}
+
+.booking_section,
+.contacts_section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.booking_title,
+.contacts_title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+}
+
+// Booking
+.booking_section {
+  @include desktop {
+    display: flex;
+
+    padding-top: 130px;
+    padding-bottom: 83px;
+    flex-basis: calc(50% + 15px);
+  }
+}
+
+.booking_container {
+  @include desktop {
+    margin-left: auto;
+    margin-right: 0;
+    width: 630px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.booking_title {
+  margin-bottom: 44px;
+}
+
+.form_label,
+.form_textarea_label {
+  position: relative;
+
+  display: inline-block;
+  margin-bottom: 44px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--form-color);
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.form_label:first-child {
+  @include tablet {
+    margin-right: 25px;
+  }
+}
+
+.form_textarea_label {
+  width: 100%;
+}
+
+.form_label_name,
+.form_textarea_label_name {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form_input,
+.form_textarea {
+  width: 100%;
+
+  font-size: 16px;
+  color: var(--form-active-color);
+  background-color: transparent;
+  outline: unset;
+  border: none;
+  border-bottom: 1px solid var(--form-color);
+}
+
+.form_input {
+  @include tablet {
+    width: 330px;
+  }
+
+  @include desktop {
+    width: 270px;
+  }
+}
+
+.form_textarea {
+  resize: none;
+
+  @include desktop {
+    width: 570px;
+  }
+}
+
+.form_input:focus,
+.form_textarea:focus,
+.form_input:not(:placeholder-shown),
+.form_textarea:not(:placeholder-shown) {
+  border-color: var(--form-active-color);
+}
+
+.form_input:focus + .form_label_name,
+.form_textarea:focus + .form_textarea_label_name,
+.form_input:not(:placeholder-shown) + .form_label_name,
+.form_textarea:not(:placeholder-shown) + .form_textarea_label_name {
+  transform: translateY(-100%);
+  color: var(--form-active-color);
+}
+
+.booking_button {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 12px 61px;
+}
+
+// Contacts
+.contacts_section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/booking&contacts/contacts-480-1x.png);
+
+  @include retina {
+    background-image: url(../img/booking&contacts/contacts-480-2x.png);
+  }
+
+  @include tablet {
+    background-image: url(../img/booking&contacts/contacts-768-1x.png);
+
+    @include retina {
+      background-image: url(../img/booking&contacts/contacts-768-2x.png);
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    flex-basis: calc(50% - 15px);
+    padding-top: 130px;
+    padding-bottom: 120px;
+    padding-left: 100px;
+
+    background-image: url(../img/booking&contacts/contacts-785-1x.png);
+
+    @include retina {
+      background-image: url(../img/booking&contacts/contacts-785-2x.png);
+    }
+  }
+}
+
+.contacts_container {
+  @include tablet {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.contacts_title {
+  font-style: normal;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.address_list {
+  @include tablet {
+    width: 250px;
+    margin-right: 100px;
+  }
+}
+
+.address_item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.address_link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--contacts-color);
+}
+
+.map_link {
+  font-weight: 700;
+}
+
+.mail_link {
+  text-decoration: underline;
+}
+
+.address_icon {
+  margin-right: 16px;
+  fill: currentColor;
+}
+
+.time_wrapper {
+  @media screen and (max-width: 767px) {
+    margin-top: 44px;
+  }
+
+  @include desktop {
+    margin-top: 70px;
+  }
+}
+
+.contacts_uppertitle {
+  color: var(--light-title-color);
+}

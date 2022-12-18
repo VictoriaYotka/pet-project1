@@ -53,6 +53,7 @@
             >
           </li>
         </ul>
+
         <div class="hero_container">
           <h3 class="uppertitle_light">A hair salon for men in Kyiv</h3>
           <h1 class="hero_title">BarberShop</h1>
@@ -199,7 +200,6 @@
       </section>
 
       <!-- Advantages -->
-
       <section class="section">
         <div class="advantages_container container">
           <div class="advantages_text_wrapper">
@@ -528,6 +528,97 @@
       </section>
 
       <!-- Booking and contacts -->
+      <div class="booking-contacts_wrapper">
+        <section class="booking_section">
+          <div class="container booking_container">
+            <h2 class="booking_title title_light">Online-booking</h2>
+            <form name="booking_form" autocomplete="on">
+              <label class="form_label" for="name">
+                <input
+                  class="form_input"
+                  id="name"
+                  name="user_name"
+                  type="text"
+                  placeholder=" "
+                  required />
+                <span class="form_label_name">Name*</span>
+              </label>
+
+              <label class="form_label" for="phone">
+                <input
+                  class="form_input"
+                  id="phone"
+                  name="user_phone"
+                  type="tel"
+                  placeholder=" "
+                  required />
+                <span class="form_label_name">Phone*</span>
+              </label>
+
+              <label class="form_textarea_label" for="message">
+                <textarea
+                  class="form_textarea"
+                  name="message"
+                  id="message"
+                  placeholder=" "
+                  cols="30"
+                  rows="4"></textarea>
+                <span class="form_textarea_label_name">Message</span>
+              </label>
+            </form>
+            <button class="booking_button btn-light" type="submit">Send</button>
+          </div>
+        </section>
+
+        <section class="contacts_section">
+          <div class="container contacts_container">
+            <h2 class="contacts_title title_light">Contacts</h2>
+            <address class="address_list">
+              <ul class="list">
+                <li class="address_item">
+                  <svg class="address_icon" width="24" height="24">
+                    <use href="./img/icons/icons-sprite.svg#map-pin"></use>
+                  </svg>
+                  <a
+                    class="address_link map_link link"
+                    href="https://goo.gl/maps/sLZAXvsponghULSc7"
+                    target="_blank"
+                    rel="noopener norefferer nofollow">
+                    st. Vasilkovaya, 7A Kiev, 08132
+                  </a>
+                </li>
+
+                <li class="address_item">
+                  <svg class="address_icon" width="24" height="24">
+                    <use href="./img/icons/icons-sprite.svg#phone"></use>
+                  </svg>
+                  <a class="address_link link" href="tel: +380441111111">
+                    +38 044 111 11 11
+                  </a>
+                </li>
+
+                <li class="address_item">
+                  <svg class="address_icon" width="24" height="24">
+                    <use href="./img/icons/icons-sprite.svg#mail"></use>
+                  </svg>
+                  <a
+                    class="address_link mail_link link"
+                    href="mailto: barbershop@email.com">
+                    barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+
+            <div class="time_wrapper">
+              <h3 class="contacts_uppertitle uppertitle_light">
+                Working hours
+              </h3>
+              <p class="descr_light">Every day from 9:00 to 22:00</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- Footer -->
