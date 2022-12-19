@@ -1,0 +1,58 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 40px 0;
+
+  background-color: rgba(17, 19, 25, 0.7);
+
+  @include tablet {
+    padding: 32px;
+  }
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_icon {
+  fill: var(--light-graphic-color);
+
+  @include tablet {
+    fill: var(--graphic-color);
+  }
+}
+
+.navigation {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.header_group_wrapper {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.mobile_menu_btn {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  height: 40px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.mobile_menu_icon {
+  fill: var(--light-graphic-color);
+}

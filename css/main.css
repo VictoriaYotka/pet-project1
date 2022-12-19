@@ -8,6 +8,7 @@
   --dark-text-color: #555555;
   --light-text-color: #9da4bd;
   --graphic-color: #303030;
+  --light-graphic-color: #ffffff;
   --form-active-color: #ffffff;
   --form-color: rgba(157, 164, 189, 0.4);
   --contacts-color: #9da4bd;
@@ -238,6 +239,76 @@ img {
 
 .networks_link {
   color: currentColor;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(17, 19, 25, 0.7);
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 32px;
+  }
+}
+
+.header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo_icon {
+  fill: var(--light-graphic-color);
+}
+@media screen and (min-width: 768px) {
+  .logo_icon {
+    fill: var(--graphic-color);
+  }
+}
+
+.navigation {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header_group_wrapper {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header_group_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.mobile_menu_btn {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .mobile_menu_btn {
+    display: none;
+  }
+}
+
+.mobile_menu_icon {
+  fill: var(--light-graphic-color);
 }
 
 .hero_section {
