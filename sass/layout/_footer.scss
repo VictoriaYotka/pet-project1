@@ -1,0 +1,41 @@
+.footer {
+  padding: 44px 0;
+
+  @include tablet {
+    padding: 56px 0;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+
+  max-width: 1200px;
+
+  @include tablet {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.footer_copyright {
+  // padding-top: 21px;
+  align-self: flex-start;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: var(--light-text-color);
+}
+
+.footer_list {
+  align-self: flex-end;
+}
+
+.footer_item {
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+}
