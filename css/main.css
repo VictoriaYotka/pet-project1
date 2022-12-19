@@ -251,7 +251,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 32px;
+    padding: 32px 0;
   }
 }
 
@@ -262,6 +262,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo_icon {
@@ -270,6 +273,11 @@ img {
 @media screen and (min-width: 768px) {
   .logo_icon {
     fill: var(--graphic-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo_icon {
+    margin-right: 131px;
   }
 }
 
@@ -283,6 +291,23 @@ img {
     display: flex;
   }
 }
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-right: auto;
+  }
+}
+
+.navigation_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: var(--light-title-color);
+}
 
 .header_group_wrapper {
   display: none;
@@ -292,7 +317,32 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .header_group_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 43px;
+  }
+}
+
+.header_tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: var(--light-title-color);
 }
 
 .mobile_menu_btn {
@@ -320,7 +370,7 @@ img {
           justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   gap: 66px;
 }
 @media screen and (min-width: 1200px) {
@@ -1070,7 +1120,7 @@ img {
     display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: start;
+            align-items: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

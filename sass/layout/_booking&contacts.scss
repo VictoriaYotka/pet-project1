@@ -178,7 +178,7 @@
 .contacts_container {
   @include tablet {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 
