@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,11 +54,57 @@
           </a>
         </div>
         <button class="mobile_menu_btn" type="button">
-          <svg class="mobile_menu_icon" width="40" height="40">
+          <svg class="mobile_menu_icon js-open-menu" width="40" height="40">
             <use href="./img/icons/icons-sprite.svg#menu"></use>
           </svg>
         </button>
       </div>
+
+      <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container">
+
+      <svg class="close_icon js-close-menu" width="40" height="40">
+        <use href="./img/icons/icons-sprite.svg#close"></use>
+      </svg>
+
+      <ul class="list">
+        <li class="mobile-menu_item"><a href="#about" class="link">About</a></li>
+        <li class="mobile-menu_item"><a href="#services" class="link">Servises and prices</a></li>
+        <li class="mobile-menu_item"><a href="#barbers" class="link">Barbers</a></li>
+        <li class="mobile-menu_item"><a href="#contacts" class="link">Contacts</a></li>
+      </ul>
+
+      <div class="mobile-menu_group-wrapper">
+        <a class="link" href="tel: +380441111111">
+          +38 044 111 11 11
+        </a>
+        <button class="btn-dark mobile-menu_button" type="button">Online-booking</button>
+      </div>
+
+      <ul class="mobile-menu_list networks_list list">
+        <li class="footer_item networks_item">
+          <a
+            class="footer_link networks_link link"
+            href="https://www.instagram.com"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener norefferer nofoolow"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer_item networks_item">
+          <a
+            class="footer_link networks_link link"
+            href="https://www.youtube.com"
+            aria-label="Youtube"
+            target="_blank"
+            rel="noopener norefferer nofoolow"
+            >Youtube</a
+          >
+        </li>
+    </ul>
+  </div>
+
     </header>
 
     <main>
@@ -93,7 +144,7 @@
       </section>
 
       <!-- About -->
-      <section class="section">
+      <section class="section" id="about">
         <div class="container about_container">
           <ul class="about_img_list list">
             <li class="about_img_item">
@@ -173,7 +224,7 @@
       </section>
 
       <!-- Services and prices -->
-      <section class="services_section section">
+      <section class="services_section section" id="services">
         <div class="container">
           <h3 class="uppertitle_light">
             Spend your time with the best masters
@@ -265,7 +316,7 @@
       </section>
 
       <!-- Team -->
-      <section class="team_section section">
+      <section class="team_section section" id="barbers">
         <div class="container">
           <h3 class="uppertitle_dark">For true enjoyers of the atmosphere</h3>
           <h2 class="title_dark team_title">Our barbers</h2>
@@ -598,7 +649,7 @@
           </div>
         </section>
 
-        <section class="contacts_section">
+        <section class="contacts_section" id="contacts">
           <div class="container contacts_container">
             <h2 class="contacts_title title_light">Contacts</h2>
             <address class="address_list">
@@ -678,8 +729,10 @@
       </div>
     </footer>
 
-    <!-- Mobile menu -->
+    
 
     <!-- Scripts -->
+    <script src="./index.js"></script>
+  
   </body>
 </html>
